@@ -1,4 +1,4 @@
-def gcd(a,b):
+def hcf(a,b):
     if a>b:
         a,b=b,a
     c=a
@@ -7,4 +7,4 @@ def gcd(a,b):
             return c
         c-=1
 a,b=map(int,input().split())
-print(gcd(a,b))
+print(hcf(a,b))
