@@ -1,14 +1,16 @@
 n=int(input())
-if(n==0 or n==1):
+if n==0:
+    print('True')
+elif(n==1):
     print('True')
 else:
     a=0
     b=1
     c=a+b
-    while c<n:
+    while(c<n):
+        c=a+b
         a=b
         b=c
-        c=a+b
     if(c==n):
         print('True')
     else:
