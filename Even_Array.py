@@ -1,11 +1,10 @@
-n=int(input())
-a=list(map(int,input().split()))
+a=int(input())
+l=list(map(int,input().split()))
 c=0
-for i in a:
-    if i==0 or i%2==0:
+for i in l:
+    if i%2==0:
         c+=1
-if(c==n):
+if(c==a):
     print('True')
 else:
     print('False')
-        
