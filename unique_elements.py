@@ -1,4 +1,7 @@
 n=int(input())
-a=list(map(int,input().split()))
-for i in sorted(set(a),key=a.index):
-    print(i,end=" ")
+s=[]
+x=list(map(int,input().split()))
+for i in x:
+    if i not in s:
+        s.append(i)
+print(*s)
