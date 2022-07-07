@@ -1,8 +1,7 @@
 n=int(input())
-a=list(map(int,input().split()))
-c=0
-s=set(a)
-z=list(s)
-for i in z:
-    c+=i
-print(c)
+x=list(map(int,input().split()))
+s=[]
+for i in x:
+    if i not in s:
+        s.append(i)
+print(sum(s))
