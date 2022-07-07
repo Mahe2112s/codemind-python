@@ -1,10 +1,8 @@
 n=int(input())
 x=list(map(int,input().split()))
 a,b=map(int,input().split())
-s=0
+s=[]
 for i in x:
     if i not in range(a,b+1):
-        s+=i
-print(s)
-        
-        
+        s.append(i)
+print(sum(s))
