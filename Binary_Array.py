@@ -1,8 +1,8 @@
 n=int(input())
-a=list(map(int,input().split()))
+x=list(map(int,input().split()))
 c=0
-for i in a:
-    if(i==0 or i==1):
+for i in x:
+    if i==1 or i==0:
         c+=1
 if(c==n):
     print('True')
