@@ -4,14 +4,17 @@ def prime(n):
     for i in range(2,n):
         if n%i==0:
             return 0
+            
     return 1
 n=int(input())
-a=list(map(int,input().split()))
-c=0
+x=list(map(int,input().split()))
 s=0
-for i in a:
+c=0
+for i in x:
     if prime(i):
-        c+=i
-        s+=1
-l=c/s
-print('%.2f'%l)
+        s+=i
+        c+=1
+avg=s/c
+print('%.2f'%avg)
+        
+        
