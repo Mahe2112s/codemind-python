@@ -6,12 +6,11 @@ def prime(n):
             return 0
     return 1
 n=int(input())
-a=list(map(int,input().split()))
-k=int(input())
+x=list(map(int,input().split()))
+a=int(input())
 c=0
-for i in a:
+for i in x:
     if prime(i):
-        if (i>=k):
+        if i>=a:
             c+=1
 print(c)
-        
