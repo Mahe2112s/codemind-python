@@ -1,9 +1,10 @@
 n=int(input())
 x=list(map(int,input().split()))
-s=0
+c=0
 for i in x:
     if i%2!=0:
-        s+=i
+        c+=i
     else:
         break
-print(s)
+print(c)
+        
