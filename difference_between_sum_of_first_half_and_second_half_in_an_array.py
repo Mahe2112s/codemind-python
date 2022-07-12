@@ -1,10 +1,7 @@
-n=int(input())
+n=input()
 x=list(map(int,input().split()))
-b=n//2
-s=0
-c=0
-for i in range(0,b):
-    s+=x[i]
-for j in range(n-1,b-1,-1):
-    c+=x[j]
-print(abs(s-c))
+a=x[0:len(x)//2]
+b=x[len(x)//2:len(x)]
+s=sum(a)
+y=sum(b)
+print(abs(s-y))
