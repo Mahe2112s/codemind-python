@@ -3,8 +3,7 @@ x=list(map(int,input().split()))
 a=int(input())
 s=0
 for i in x:
-    if i<=a:
-        s+=i
-    else:
+    s+=i
+    if i==a:
         break
 print(s)
