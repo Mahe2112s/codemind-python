@@ -1,12 +1,11 @@
 def pal(n):
-    c=0
-    while(n>0):
-        d=n%10
+    d=0
+    while(n!=0):
+        r=n%10
         n=n//10
-        c=c*10+d
-    return c
-a=int(input())
-a=list(map(int,input().split()))
-s=0
-for i in a:
-    print(pal(i),end=' ')
+        d=d*10+r
+    return d
+n=int(input())
+x=list(map(int,input().split()))
+for i in x:
+    print(pal(i),end=" ")
