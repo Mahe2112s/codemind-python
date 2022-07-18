@@ -1,12 +1,7 @@
 n=input()
-s='aeiouAEIOU'
-c=[]
+a="aeiouAEIOU"
+c=0
 for i in n:
-    if i in s:
-        c.append(i)
-if(len(c)==0):
-    print('0')
-else:
-    print(len(c))
-    
-
+    if i in a:
+        c+=1
+print(c)
