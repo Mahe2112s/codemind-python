@@ -1,11 +1,12 @@
 n=input()
-d=input()
-s=[]
+a="aeiouAEIOU"
+c=0
+k=input()
 for i in n:
-    if i==d:
-        s.append(n.index(i))
-if(len(s)==0):
-    print('False')
-else:
+    if i in k:
+        c=1
+if c==1:
     print('True')
-    print(s[0])
+    print(n.index(k))
+else:
+    print('False')
