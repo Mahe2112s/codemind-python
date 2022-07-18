@@ -1,10 +1,10 @@
 def dig(n):
     c=0
-    if(n==0):
+    if n==0:
         return 1
-    elif(n<0):
-        n=n*-1
-    while(n!=0):
+    elif n<0:
+        n = n*-1
+    while(n):
         n=n//10
         c+=1
     return c
