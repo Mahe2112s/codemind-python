@@ -1,5 +1,4 @@
 n=input()
-a=n.split()
 c=0
-for i in a:
+for i in n.split():
     print(len(i),end=" ")
