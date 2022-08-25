@@ -1,11 +1,12 @@
 n=input()
-s=[]
 a='aeiou'
+n=n.lower()
+s=[]
+f=[]
 for i in a:
     if i not in n:
-        s.append(i)
-if(len(s)==0):
+        f.append(i)
+if len(f)==0:
     print('0')
 else:
-    for j in s:
-        print(j,end=" ")
+    print(*f)
