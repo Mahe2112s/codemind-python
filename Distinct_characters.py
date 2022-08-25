@@ -6,6 +6,6 @@ s=[]
 for i in n.lower():
     if i==' ':
         continue
-    if i not in s:
+    if n.count(i)==1:
         s.append(i)
 print(string(s))
