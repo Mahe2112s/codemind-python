@@ -1,8 +1,13 @@
+def string(str):
+    a="aeiou"
+    s=0
+    for i in str:
+        if i in a:
+            s+=1
+    if s==0:
+        return '-1'
+    else:
+        return s
 n=input()
-z=n.split()
-l=[]
-for i in z:
-    vowel=sum(letter in'aeiou' for letter in i.lower())
-    l.append(vowel)
-d=str(l)
-print(d.strip('[]').replace(',',""))
+for i in n.split():
+    print(string(i),end=" ")
