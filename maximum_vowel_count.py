@@ -1,7 +1,14 @@
 n=input()
-s=n.split()
-c=[]
-for i in s:
-    v=sum(letter in'aeiou' for letter in i.lower())
-    c.append(v)
-print(max(c))
+n=n.lower()
+a="aeiou"
+s=[]
+c=0
+for i in n.split():
+    for j in i:
+        if j in a:
+            c+=1
+    s.append(c)
+    c=0
+m=max(s)
+print(m)
+        
