@@ -1,12 +1,14 @@
 n=input()
-s=''
-a='aeiouAEIOU'
+n=n.split()
+s=[]
+a="aeiouAEIOU"
 f=0
 for i in n:
-    if i in a and i not in s:
-        s+=i
-        f=1
-if(f==1):
-    print(*s)
+    for j in i:
+        if j in a and j not in s:
+            s.append(j)
+            f+=1
+if(f==0):
+    print('-1')
 else:
-    print(-1)
+    print(*s)
