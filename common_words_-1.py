@@ -1,10 +1,11 @@
-n=input()
-m=input()
-n=n.lower()
-m=m.lower()
-s=0
-for i in n.split():
-    for j in m.split():
+n=input().lower()
+m=input().lower()
+n=n.split()
+m=m.split()
+c=0
+for i in n:
+    for j in m:
         if i==j:
-            s+=1
-print(s)
+            c+=1
+print(c)
+    
